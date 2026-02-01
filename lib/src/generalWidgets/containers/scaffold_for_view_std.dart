@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gui_creation_helper/src/generalWidgets/containers/not_yet_implemented.dart';
-// import 'package:sp_frontend/apps/sp/gui/main_menu/menu_widget.dart';
-// import 'package:sp_frontend/apps/sp/gui/ownGeneralWidgets/appbar.dart';
 
 class ScaffoldForViewStandard extends StatelessWidget {
   ScaffoldForViewStandard({
