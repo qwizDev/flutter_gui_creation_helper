@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
-import 'package:gui_creation_helper/src/constants/gui_constants.dart';
+import 'package:gui_creation_helper/src/constants/constants_sizes_and_similar.dart';
 import 'package:gui_creation_helper/src/generalWidgets/containers/scaffold_for_view_std.dart';
 import 'package:gui_creation_helper/src/textTools/nice_text.dart';
 
@@ -64,16 +64,16 @@ class _ContentWidgetThemeColor extends State<StatefulWidget> {
 
   Color _chosenColor = _startColor;
 
-  late ColorScheme _customScheme;
+  late ColorScheme _customColorScheme;
 
   late ThemeData _customThemeData;
 
   @override
   Widget build(BuildContext context) {
-    _customScheme = ColorScheme.fromSeed(seedColor: _chosenColor);
+    _customColorScheme = ColorScheme.fromSeed(seedColor: _chosenColor);
 
     _customThemeData = ThemeData(
-      colorScheme: _customScheme,
+      colorScheme: _customColorScheme,
       useMaterial3: true,
     );
 

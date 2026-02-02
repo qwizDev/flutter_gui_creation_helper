@@ -1,17 +1,38 @@
-// diese Klasse soll exportieren:
+// ================================
+// ================================
+// WIDGETS
+// ================================
+// ================================
 
-// export 'src/show_all_theme_colors_widget.dart' show ShowAllThemeColorsWidget;
-export 'src/generalWidgets/screens/screen_show_all_theme_colors.dart';
+// CONTAINERS
+export 'src/generalWidgets/containers/scaffold_for_view_std.dart' show ScaffoldForViewStandard;
+export 'src/generalWidgets/containers/not_yet_implemented.dart' show ContentWidgetNotYetImplemented;
 
-export 'src/generalWidgets/containers/scaffold_for_view_std.dart';
+// BUTTONS
 
-// sowas in der Art wie:
-// GuiConstants
-//     Farben
-//     Größen
-//     Borders
-//     Decoration
-//     uvm.
-// String-Tools und/oder Tui-Tools
-// StandardViewScaffold
-// StandardWidgets, oä. (Container-Klassen, StandardViewScaffold, uvm.)
+// MISC
+export 'src/generalWidgets/screens/screen_show_all_theme_colors.dart' show ShowAllThemeColorsScreen;
+
+
+// ================================
+// ================================
+// CONSTANTS 
+// ================================
+// ================================
+
+// SIZES
+// DESIGN (Decorations, Borders, Constraints, and similar)
+
+export 'src/constants/constants_sizes_and_similar.dart';
+
+// COLORS
+export 'src/constants/constants_colors.dart';
+
+
+// ================================
+// ================================
+// TEXT-TOOLS 
+// ================================
+// ================================
+export 'src/textTools/nice_text.dart';
+

@@ -6,8 +6,10 @@ class NiceText extends Text {
     fontSize: textSize,
   ); // Static-Konstante
 
-  const NiceText(super.data,
-      {super.key,
-      super.style = defaultStyle,
-      super.textAlign = TextAlign.left});
+  const NiceText(
+    super.data, {
+    super.key,
+    super.style = defaultStyle,
+    super.textAlign = TextAlign.left,
+  });
 }

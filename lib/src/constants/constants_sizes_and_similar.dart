@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:gui_creation_helper/src/constants/constants_colors.dart';
 
-//// SIZES ////
+// ================================
+// SIZES
+// ================================
 
 final double windowSizeWidthStd = 1200;
 final double windowSizeHeightStd = 1000;
@@ -40,80 +43,82 @@ final double buttonSizeHeigthHuge = 80;
 final double buttonSizeWidthMonster = 600;
 final double buttonSizeHeigthMonster = 200;
 
-BoxConstraints boxConstraintsMainWidgetStd = BoxConstraints(
+
+// ================================
+// CONSTRAINTS
+// ================================
+
+final BoxConstraints boxConstraintsMainWidgetStd = BoxConstraints(
   maxWidth: buttonSizeWidthStd,
   maxHeight: buttonSizeHeigthStd,
 );
 
-BoxConstraints boxConstraintsButtonStd = BoxConstraints(
+final BoxConstraints boxConstraintsButtonStd = BoxConstraints(
   minWidth: buttonSizeWidthStd,
   maxWidth: buttonSizeWidthStd,
   minHeight: buttonSizeHeigthStd,
   maxHeight: buttonSizeHeigthStd,
 );
 
-BoxConstraints boxConstraintsButtonLarge = BoxConstraints(
+final BoxConstraints boxConstraintsButtonLarge = BoxConstraints(
   minWidth: buttonSizeWidthLarge,
   maxWidth: buttonSizeWidthLarge,
   minHeight: buttonSizeHeigthLarge,
   maxHeight: buttonSizeHeigthLarge,
 );
 
-BoxConstraints boxConstraintsButtonHuge = BoxConstraints(
+final BoxConstraints boxConstraintsButtonHuge = BoxConstraints(
   minWidth: buttonSizeWidthHuge,
   maxWidth: buttonSizeWidthHuge,
   minHeight: buttonSizeHeigthHuge,
   maxHeight: buttonSizeHeigthHuge,
 );
 
-BoxConstraints boxConstraintsButtonMonster = BoxConstraints(
+final BoxConstraints boxConstraintsButtonMonster = BoxConstraints(
   minWidth: buttonSizeWidthMonster,
   maxWidth: buttonSizeWidthMonster,
   minHeight: buttonSizeHeigthMonster,
   maxHeight: buttonSizeHeigthMonster,
 );
 
-BoxConstraints boxConstraintsPanelStd = BoxConstraints(
+final BoxConstraints boxConstraintsPanelStd = BoxConstraints(
   minWidth: panelSizeWidthSmall,
   maxWidth: panelSizeWidthStd,
   minHeight: panelSizeHeigthSmall,
   maxHeight: panelSizeHeigthSmall,
 );
 
-BoxConstraints boxConstraintsPanelLarge = BoxConstraints(
+final BoxConstraints boxConstraintsPanelLarge = BoxConstraints(
   minWidth: panelSizeWidthSmall,
   maxWidth: panelSizeWidthLarge,
   minHeight: panelSizeHeigthSmall,
   maxHeight: panelSizeHeigthLarge,
 );
 
-BoxConstraints boxConstraintsPanelHuge = BoxConstraints(
+final BoxConstraints boxConstraintsPanelHuge = BoxConstraints(
   minWidth: panelSizeWidthSmall,
   maxWidth: panelSizeWidthHuge,
   minHeight: panelSizeHeigthSmall,
   maxHeight: panelSizeHeigthLarge + 200,
 );
 
-BoxConstraints boxConstraintsPanelForOutput = BoxConstraints(
+final BoxConstraints boxConstraintsPanelForOutput = BoxConstraints(
   minWidth: 500,
   maxWidth: 1200,
   minHeight: panelSizeHeigthSmall,
   maxHeight: panelSizeHeigthHuge,
 );
 
-BoxConstraints boxConstraintsPanelForOutputSameWidth = BoxConstraints(
+final BoxConstraints boxConstraintsPanelForOutputSameWidth = BoxConstraints(
   minWidth: panelSizeWidthHuge,
   maxWidth: panelSizeWidthHuge,
   minHeight: panelSizeHeigthStd,
   maxHeight: panelSizeHeigthLikeInfinite,
 );
 
-//// COLORS ////
 
-final Color _colBorderStd = const Color.fromARGB(255, 1, 20, 52);
-final Color _colBorderLighter = const Color.fromARGB(43, 1, 20, 52);
-
-final Color colBoxBorderStd = _colBorderStd;
-final Color colMenuSeperationBorder = _colBorderLighter;
+// ================================
+// DECORATIONS
+// ================================
 
 final boxDecoStd = BoxDecoration(border: Border.all(color: colBoxBorderStd));
