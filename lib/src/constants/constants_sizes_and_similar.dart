@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:gui_creation_helper/src/constants/constants_colors.dart';
 
-// ================================
-// SIZES
-// ================================
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+//  SIZES
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+
+// SIZES: WINDOW
 
 final double windowSizeWidthStd = 1200;
 final double windowSizeHeightStd = 1000;
@@ -16,6 +20,8 @@ final double widgetSizeHeightMainWidget = 800;
 
 final double widgetSizeWidthPrettyImportant = 600;
 final double widgetSizeHeightPrettyImportant = 600;
+
+// SIZES: PANEL
 
 final double panelSizeWidthSmall = 200;
 final double panelSizeHeigthSmall = 200;
@@ -31,6 +37,13 @@ final double panelSizeHeigthHuge = 1400;
 
 final double panelSizeHeigthLikeInfinite = 5000;
 
+// SIZES: FORMS
+
+const double widthOfFormArea = 900;
+const double widthInputBox = 700;
+
+// SIZES: BUTTONS
+
 final double buttonSizeWidthStd = 200;
 final double buttonSizeHeigthStd = 40;
 
@@ -43,10 +56,11 @@ final double buttonSizeHeigthHuge = 80;
 final double buttonSizeWidthMonster = 600;
 final double buttonSizeHeigthMonster = 200;
 
-
-// ================================
-// CONSTRAINTS
-// ================================
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+//  CONSTRAINTS
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
 
 final BoxConstraints boxConstraintsMainWidgetStd = BoxConstraints(
   maxWidth: buttonSizeWidthStd,
@@ -116,9 +130,48 @@ final BoxConstraints boxConstraintsPanelForOutputSameWidth = BoxConstraints(
   maxHeight: panelSizeHeigthLikeInfinite,
 );
 
-
-// ================================
-// DECORATIONS
-// ================================
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+//  DECORATIONS
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
 
 final boxDecoStd = BoxDecoration(border: Border.all(color: colBoxBorderStd));
+
+
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+//  MARGIN / PADDING / AND SIMILAR
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+const double marginVertStd = 20;
+const double marginVertSmall = 5;
+const double marginVertScreenTitle = 20;
+const double marginQuestionWidgetStd = 3 * marginVertSmall;
+
+const double iconMarginStd = 4;
+
+const double radioBtnGapVerStd = 0;
+const double radioBtnGapHorStd = 2.0;
+
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+//  BUTTONS
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+const double buttonRadius = 4;
+
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+//  BORDERS
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+const double borderWidthStd = 1.0;
+
+
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+//  ICONS
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+const double iconSizeStd = 35;
