@@ -11,7 +11,6 @@ export 'src/generalWidgets/containers/not_yet_implemented.dart' show ContentWidg
 // BUTTONS
 
 // MISC
-export 'src/generalWidgets/screens/screen_show_all_theme_colors.dart' show ShowAllThemeColorsScreen;
 
 
 // ================================
@@ -34,5 +33,5 @@ export 'src/constants/constants_colors.dart';
 // TEXT-TOOLS 
 // ================================
 // ================================
-export 'src/textTools/nice_text.dart';
 
+export 'src/textTools/nice_text.dart';
