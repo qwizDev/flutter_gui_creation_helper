@@ -20,9 +20,13 @@ export 'src/generalWidgets/containers/not_yet_implemented.dart' show ContentWidg
 // ================================
 
 // SIZES
+
+// export 'src/constants/constants_sizes_and_similar.dart';
+export 'src/constants/constants_sizes.dart';
+
 // DESIGN (Decorations, Borders, Constraints, and similar)
 
-export 'src/constants/constants_sizes_and_similar.dart';
+export 'src/constants/constants_widget_deco.dart';
 
 // COLORS
 export 'src/constants/constants_colors.dart';

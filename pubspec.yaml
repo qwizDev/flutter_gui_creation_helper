@@ -1,6 +1,6 @@
 name: gui_creation_helper
 description: "A new Flutter package project."
-version: 0.0.2
+version: 0.0.3
 publish_to: none # without this line, it's not possible to use git-repos as dependencies.
 # remove this line the moment if gets published to flutter's package-hub
 # (then of course changing all git-repo-dependencies to published flutter packages)

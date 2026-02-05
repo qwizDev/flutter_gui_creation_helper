@@ -12,6 +12,10 @@ const Color chosenYellowStd = Color.fromRGBO(255, 235, 59, 1);
 const Color chosenBlackBlueish = Color.fromARGB(255, 1, 20, 52);
 const Color chosenGrayLight = Color.fromARGB(43, 1, 20, 52);
 
+const Color chosenBackgroundLightNice1 = Color.fromARGB(255, 235, 241, 244);
+const Color chosenBackgroundLightNice2 = Color.fromARGB(255, 255, 255, 244);
+
+
 
 //  COLORS: SPECIAL
 
