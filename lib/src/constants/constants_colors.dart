@@ -44,15 +44,15 @@ const Color colorTextHighlightedYellow = chosenYellowHighlighted;
 //  COLORS: BORDERS
 /*----------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
-final Color colorBorderStd = chosenBlackStd;
-final Color colorBorderHighlightedRed = chosenRedHighlighted;
+const Color colorBorderStd = chosenBlackStd;
+const Color colorBorderHighlightedRed = chosenRedHighlighted;
 
 
 //// COLORS ////
 
-final Color _colBorderStd = chosenBlackBlueish;
-final Color _colBorderLighter = chosenGrayLight;
+const Color _colBorderStd = chosenBlackBlueish;
+const Color _colBorderLighter = chosenGrayLight;
 
-final Color colBoxBorderStd = _colBorderStd;
-final Color colMenuSeperationBorder = _colBorderLighter;
+const Color colBoxBorderStd = _colBorderStd;
+const Color colMenuSeperationBorder = _colBorderLighter;
 

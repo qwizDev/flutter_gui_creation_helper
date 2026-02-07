@@ -9,8 +9,6 @@ import 'constants_colors.dart';
 /*----------------------------------------------------------------*/
 
 class WidgetDeco {
-
-
   static const BoxConstraints boxConstraintsMainWidgetStd = BoxConstraints(
     maxWidth: Sizes.buttonSizeWidthStd,
     maxHeight: Sizes.buttonSizeHeigthStd,
@@ -72,12 +70,13 @@ class WidgetDeco {
     maxHeight: Sizes.panelSizeHeigthHuge,
   );
 
-  static const BoxConstraints boxConstraintsPanelForOutputSameWidth = BoxConstraints(
-    minWidth: Sizes.panelSizeWidthHuge,
-    maxWidth: Sizes.panelSizeWidthHuge,
-    minHeight: Sizes.panelSizeHeigthStd,
-    maxHeight: Sizes.panelSizeHeigthLikeInfinite,
-  );
+  static const BoxConstraints boxConstraintsPanelForOutputSameWidth =
+      BoxConstraints(
+        minWidth: Sizes.panelSizeWidthHuge,
+        maxWidth: Sizes.panelSizeWidthHuge,
+        minHeight: Sizes.panelSizeHeigthStd,
+        maxHeight: Sizes.panelSizeHeigthLikeInfinite,
+      );
 
   /*----------------------------------------------------------------*/
   /*----------------------------------------------------------------*/
@@ -85,8 +84,10 @@ class WidgetDeco {
   /*----------------------------------------------------------------*/
   /*----------------------------------------------------------------*/
 
-  static final boxDecoStd = BoxDecoration(border: Border.all(color: colBoxBorderStd));
-  
+  static final boxDecoStd = BoxDecoration(
+    border: Border.all(color: colBoxBorderStd),
+  );
+
   /*----------------------------------------------------------------*/
   /*----------------------------------------------------------------*/
   //  MARGIN / PADDING / AND SIMILAR
@@ -116,6 +117,10 @@ class WidgetDeco {
   /*----------------------------------------------------------------*/
   static const double borderWidthStd = 1.0;
 
+  static final BoxBorder borderStd = BoxBorder.all(
+    color: chosenBlackStd,
+    width: borderWidthStd,
+  );
 
   /*----------------------------------------------------------------*/
   /*----------------------------------------------------------------*/
@@ -123,6 +128,4 @@ class WidgetDeco {
   /*----------------------------------------------------------------*/
   /*----------------------------------------------------------------*/
   static const double iconSizeStd = 35;
-
-
 }

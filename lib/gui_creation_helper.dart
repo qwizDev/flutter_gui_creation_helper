@@ -39,3 +39,4 @@ export 'src/constants/constants_colors.dart';
 // ================================
 
 export 'src/textTools/nice_text.dart';
+export 'src/textTools/headlines.dart';
