@@ -31,7 +31,7 @@ class Headline extends StatelessWidget {
 
 class _HeadlineText extends Text {
   // static const double textSizeDefault = 24;
-  static const TextStyle _defaultStyle = TextStyle(,
+  static const TextStyle _defaultStyle = TextStyle(
     fontSize: (_textSizeDefaultAsDouble),
   );
   final int textSize;
