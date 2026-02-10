@@ -7,7 +7,6 @@
 // SIZES: WINDOW
 
 class Sizes {
-    
   const Sizes._();
 
   static const double windowSizeWidthStd = 1200;
@@ -21,7 +20,6 @@ class Sizes {
 
   static const double widgetSizeWidthPrettyImportant = 600;
   static const double widgetSizeHeightPrettyImportant = 600;
-
 
   // SIZES: PANEL
 
@@ -57,5 +55,4 @@ class Sizes {
 
   static const double buttonSizeWidthMonster = 600;
   static const double buttonSizeHeigthMonster = 200;
-
 }

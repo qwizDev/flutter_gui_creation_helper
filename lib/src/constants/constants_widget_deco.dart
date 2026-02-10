@@ -88,6 +88,27 @@ class WidgetDeco {
     border: Border.all(color: colBoxBorderStd),
   );
 
+  static BoxDecoration createBoxDeco({
+    BuildContext? context,
+    Color colBackground = Colors.white,
+    Color colBorder = Colors.black,
+    // Color colBackground = Theme.of(context).colorScheme.surface,
+    // Color colBorder = Theme.of(context).colorScheme.onSurface,
+    double width = 1,
+  }) {
+    Color resultingBackgroundColor = colBackground;
+    Color resultingColBorder = colBorder;
+    if (context != null) {
+      resultingBackgroundColor = Theme.of(context).colorScheme.surface;
+      resultingColBorder = Theme.of(context).colorScheme.onSurface;
+    }
+
+    return BoxDecoration(
+      color: resultingBackgroundColor,
+      border: Border.all(color: resultingColBorder, width: width),
+    );
+  }
+
   /*----------------------------------------------------------------*/
   /*----------------------------------------------------------------*/
   //  MARGIN / PADDING / AND SIMILAR
@@ -97,6 +118,8 @@ class WidgetDeco {
   static const double marginVertSmall = 5;
   static const double marginVertScreenTitle = 20;
   static const double marginQuestionWidgetStd = 3 * marginVertSmall;
+
+  static const double paddingBoxInPanel = 5;
 
   static const double iconMarginStd = 4;
 
@@ -121,6 +144,13 @@ class WidgetDeco {
     color: chosenBlackStd,
     width: borderWidthStd,
   );
+
+  // // InputBorder
+  // static const OutlineInputBorder borderPrimary = OutlineInputBorder(
+  //   borderSide: BorderSide()
+  //   borderRadius: ,
+  //   gapPadding: ,
+  // );
 
   /*----------------------------------------------------------------*/
   /*----------------------------------------------------------------*/

@@ -15,8 +15,6 @@ const Color chosenGrayLight = Color.fromARGB(43, 1, 20, 52);
 const Color chosenBackgroundLightNice1 = Color.fromARGB(255, 235, 241, 244);
 const Color chosenBackgroundLightNice2 = Color.fromARGB(255, 255, 255, 244);
 
-
-
 //  COLORS: SPECIAL
 
 const Color chosenRedHighlighted = Colors.red;
@@ -47,7 +45,6 @@ const Color colorTextHighlightedYellow = chosenYellowHighlighted;
 const Color colorBorderStd = chosenBlackStd;
 const Color colorBorderHighlightedRed = chosenRedHighlighted;
 
-
 //// COLORS ////
 
 const Color _colBorderStd = chosenBlackBlueish;
@@ -55,4 +52,3 @@ const Color _colBorderLighter = chosenGrayLight;
 
 const Color colBoxBorderStd = _colBorderStd;
 const Color colMenuSeperationBorder = _colBorderLighter;
-
