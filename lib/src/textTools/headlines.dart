@@ -8,21 +8,25 @@ class Headline extends StatelessWidget {
   const Headline({
     super.key,
     required this.text,
-    this.fontSize = _textSizeDefaultAsInt,
+    this.fontSize = _textSizeDefaultAsDouble,
   });
 
   final String text;
-  final int fontSize;
+  final double fontSize;
 
   @override
   Widget build(BuildContext context) {
+    Color primary = Theme.of(context).colorScheme.primary;
+
+    final TextStyle textStyle = TextStyle(fontSize: fontSize, color: primary);
+
     return Padding(
       padding: EdgeInsetsGeometry.all(8.0),
       child: Container(
-        color: Theme.of(context).colorScheme.inverseSurface,
+        color: Theme.of(context).colorScheme.surface,
         child: Row(
           mainAxisSize: MainAxisSize.max,
-          children: [_HeadlineText(text, textSize: fontSize)],
+          children: [_HeadlineText(text, textStyle: textStyle, key: key)],
         ),
       ),
     );
@@ -30,17 +34,12 @@ class Headline extends StatelessWidget {
 }
 
 class _HeadlineText extends Text {
-  // static const double textSizeDefault = 24;
-  static const TextStyle _defaultStyle = TextStyle(
-    fontSize: (_textSizeDefaultAsDouble),
-  );
-  final int textSize;
+  final TextStyle textStyle;
 
   _HeadlineText(
     super.data, {
     super.key,
-    super.style = _defaultStyle,
+    required this.textStyle,
     super.textAlign = TextAlign.left,
-    this.textSize = 24,
-  });
+  }) : super(style: textStyle);
 }
