@@ -119,6 +119,9 @@ class WidgetDeco {
   static const double marginVertScreenTitle = 20;
   static const double marginQuestionWidgetStd = 3 * marginVertSmall;
 
+  static const double paddingStd = 8;
+  static const double paddingForColorListing = 12;
+
   static const double paddingBoxInPanel = 5;
 
   static const double iconMarginStd = 4;

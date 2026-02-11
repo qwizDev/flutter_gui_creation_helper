@@ -11,6 +11,8 @@ export 'src/generalWidgets/containers/not_yet_implemented.dart'
     show ContentWidgetNotYetImplemented;
 
 // BUTTONS
+export 'src/generalWidgets/buttons/button_std.dart';
+export 'src/generalWidgets/buttons/button_dev.dart';
 
 // MISC
 
