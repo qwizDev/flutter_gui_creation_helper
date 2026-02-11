@@ -39,14 +39,14 @@ class ThemeStuff {
         // borderSide: BorderSide(color: chosenYellowHighlighted, width: 1),
         borderSide: BorderSide(
           // color: colorScheme.primary,
-          color: chosenYellowHighlighted,
+          // color: chosenYellowHighlighted,
+          color: colorStd,
           width: borderWidthStd,
         ),
       ),
       errorBorder: OutlineInputBorder(
         borderSide: BorderSide(
           color: colorScheme.error,
-          // color: colorScheme.primary,
           // color: colorStd,
           width: borderWidthStd,
         ),
