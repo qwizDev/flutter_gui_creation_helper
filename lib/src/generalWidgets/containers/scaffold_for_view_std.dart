@@ -25,21 +25,36 @@ class ScaffoldForViewStandard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appBarWidget,
-      body: Center(
-        child: Row(
-          children: [
-            menuWidget,
-            ConstrainedBox(
-              // constraints: boxConstraintsMainWidgetStd,
-              // constraints: BoxConstraints.expand(),
-              constraints: BoxConstraints(
-                maxHeight: MediaQuery.of(context).size.height,
-                maxWidth: MediaQuery.of(context).size.width - 200,
-              ),
-              child: contentWidget,
-            ),
-          ],
-        ),
+      body: Row(
+        children: [
+          menuWidget,
+          // ConstrainedBox(
+          //   // constraints: boxConstraintsMainWidgetStd,
+          //   // constraints: BoxConstraints.expand(),
+          //   constraints: BoxConstraints(
+          //     maxHeight: MediaQuery.of(context).size.height,
+          //     maxWidth: MediaQuery.of(context).size.width - 200,
+          //   ),
+          //   child: contentWidget,
+          // ),
+
+          // LayoutBuilder(
+          //   builder: (context, constraints) {
+          //     return ConstrainedBox(
+          //       // constraints: BoxConstraints(maxWidth: constraints.maxWidth),
+          //       // constraints: BoxConstraints(maxWidth: constraints.maxWidth),
+          //       constraints: BoxConstraints(maxWidth: 1300),
+          //       child: contentWidget,
+          //     );
+          //     // return SizedBox(
+          //     //   width: constraints.maxWidth,
+          //     //   child: contentWidget,
+          //     // );
+          //     // return Expanded(child: contentWidget);
+          //   },
+          // ),
+          Expanded(child: contentWidget),
+        ],
       ),
     );
   }

@@ -36,7 +36,7 @@ class Headline extends StatelessWidget {
 class _HeadlineText extends Text {
   final TextStyle textStyle;
 
-  _HeadlineText(
+  const _HeadlineText(
     super.data, {
     super.key,
     required this.textStyle,
